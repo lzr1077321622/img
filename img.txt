@@ -1,1 +1,37 @@
-asdasdasd
+下载Github建议下载一直安装 默认目录安装
+
+方法1
+git config --global user.name 'lzr'
+git config --global user.email '464857177@qq.com'
+
+
+登录Github 上点击右上角settings  在点击SSH and GPG keys  在点击new SSh key  titlte随便填写  key 填写key 可以就是 C:\Users\Administrator\.ssh   id_rsa.pub里面的内容 
+
+在点击ADD ssh key  在点击 Github右边的加号按钮，创建一个项目
+
+
+打开要上传的项目文件夹
+
+
+git init   //初始化苍鹭
+
+git add .  //把项目添加进仓库
+
+git status   //查看状态
+
+git commit -m '备注' //提交
+
+git push https://github.com/lzr1077321622/Vue.git 仓库地址  
+
+git push https://github.com/lzr1077321622/Vue.git master  仓库地址 
+
+
+
+方法2
+
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/lzr1077321622/vueElement.git  仓库地址 
+git push -u origin master
+
